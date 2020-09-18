@@ -60,11 +60,11 @@
                 let data = await response.json()
                 data.forEach(element => {
                     let li = document.createElement("li")
-                    li.innerText = element.name
+                    li.innerText = element
                     let ol = document.getElementById("list")
                     ol.appendChild(li)
                 });
-                console.log("Done")
+                console.log("Processing Done")
             }catch(error){
                 console.log(error)
             }

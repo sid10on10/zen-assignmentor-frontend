@@ -54,7 +54,7 @@
         async function showstudents(){
             try{
                 let mentor = document.getElementById("mentorselect").value
-                let url = "https://zen-assign-mentor.herokuapp.com/students"+mentor
+                let url = "https://zen-assign-mentor.herokuapp.com/students/"+mentor
                 console.log(url)
                 let response = await fetch(url)
                 let data = await response.json()
@@ -64,6 +64,7 @@
                     let ol = document.getElementById("list")
                     ol.appendChild(li)
                 });
+                console.log("Done")
             }catch(error){
                 console.log(error)
             }

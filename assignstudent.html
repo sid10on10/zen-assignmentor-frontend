@@ -21,7 +21,7 @@
             <ol id="list"></ol>
         </div>
         <div class="container innerbox mt-10">  
-            <form onsubmit="">
+            <form onsubmit="assignmentor();return false">
                 <div class="form-group">
                     <label for="mentorselect">Mentor select</label>
                     <select class="form-control" id="mentorselect">
@@ -33,7 +33,7 @@
                     <select multiple class="form-control" id="studentselect">
                     </select>
                   </div>
-                <button type="submit" class="btn btn-primary" onclick="assignmentor()">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>  
